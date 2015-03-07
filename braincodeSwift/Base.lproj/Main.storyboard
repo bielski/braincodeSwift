@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="braincodeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkk-Qg-aYG">
+                                <rect key="frame" x="75" y="322" width="171" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="REJESTRACJA">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhd-xS-Vfe">
+                                <rect key="frame" x="75" y="375" width="171" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="LOKALIZACJA">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuK-U9-ONV">
+                                <rect key="frame" x="75" y="428" width="171" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="PARTNERZY">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="braincode.png" translatesAutoresizingMaskIntoConstraints="NO" id="kXl-ET-fDv">
+                                <rect key="frame" x="52" y="54" width="217" height="220"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fkk-Qg-aYG" firstAttribute="top" secondItem="kXl-ET-fDv" secondAttribute="bottom" constant="48" id="1Jz-nK-Ju4"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="fkk-Qg-aYG" secondAttribute="bottom" constant="216" id="6VB-Vl-AFD"/>
+                            <constraint firstItem="fkk-Qg-aYG" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="59" id="7yL-xO-tQC"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="lhd-xS-Vfe" secondAttribute="bottom" constant="163" id="Ctu-Er-X4n"/>
+                            <constraint firstItem="cuK-U9-ONV" firstAttribute="top" secondItem="lhd-xS-Vfe" secondAttribute="bottom" constant="23" id="FYt-gz-40m"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kXl-ET-fDv" secondAttribute="trailing" constant="35" id="G4q-z0-xqb"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="kXl-ET-fDv" secondAttribute="bottom" constant="294" id="NMw-aE-ymN"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cuK-U9-ONV" secondAttribute="bottom" constant="110" id="QtO-MP-p2I"/>
+                            <constraint firstItem="lhd-xS-Vfe" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="59" id="UHZ-Ki-mqC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cuK-U9-ONV" secondAttribute="trailing" constant="58" id="Vq9-NY-qjj"/>
+                            <constraint firstItem="kXl-ET-fDv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="36" id="ar1-cY-blA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lhd-xS-Vfe" secondAttribute="trailing" constant="58" id="d5Y-cS-Kf6"/>
+                            <constraint firstItem="kXl-ET-fDv" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="34" id="gYm-wS-IoB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fkk-Qg-aYG" secondAttribute="trailing" constant="58" id="ia1-yS-G74"/>
+                            <constraint firstItem="cuK-U9-ONV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="59" id="w8w-aJ-NfK"/>
+                            <constraint firstItem="lhd-xS-Vfe" firstAttribute="top" secondItem="fkk-Qg-aYG" secondAttribute="bottom" constant="23" id="yQU-YE-LxU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="localizationButton" destination="lhd-xS-Vfe" id="MEH-cy-1hV"/>
+                        <outlet property="partnersButton" destination="cuK-U9-ONV" id="KG1-4g-ff3"/>
+                        <outlet property="registrationButton" destination="fkk-Qg-aYG" id="RfP-o9-su9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="343"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="braincode.png" width="517" height="517"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
