@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8sa-qa-MhZ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -30,6 +30,9 @@
                                 <state key="normal" title="LOKALIZACJA">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="aS7-v1-wx5" kind="push" id="74b-Kj-xVW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuK-U9-ONV">
                                 <rect key="frame" x="75" y="428" width="171" height="30"/>
@@ -38,7 +41,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="braincode.png" translatesAutoresizingMaskIntoConstraints="NO" id="kXl-ET-fDv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="braincode.png" translatesAutoresizingMaskIntoConstraints="NO" id="kXl-ET-fDv">
                                 <rect key="frame" x="52" y="54" width="217" height="220"/>
                             </imageView>
                         </subviews>
@@ -62,6 +65,7 @@
                             <constraint firstItem="lhd-xS-Vfe" firstAttribute="top" secondItem="fkk-Qg-aYG" secondAttribute="bottom" constant="23" id="yQU-YE-LxU"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="lr2-Na-egi"/>
                     <connections>
                         <outlet property="localizationButton" destination="lhd-xS-Vfe" id="MEH-cy-1hV"/>
                         <outlet property="partnersButton" destination="cuK-U9-ONV" id="KG1-4g-ff3"/>
@@ -69,6 +73,58 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="694" y="343"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="07C-0M-0O6">
+            <objects>
+                <viewController id="aS7-v1-wx5" customClass="MapViewController" customModule="braincodeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nfD-Ry-cwB"/>
+                        <viewControllerLayoutGuide type="bottom" id="892-EI-Z9m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aW4-Q2-WtI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="satellite" translatesAutoresizingMaskIntoConstraints="NO" id="pkx-Ci-B4p">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="569"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pkx-Ci-B4p" firstAttribute="leading" secondItem="aW4-Q2-WtI" secondAttribute="leadingMargin" constant="-16" id="1IJ-DP-CxY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pkx-Ci-B4p" secondAttribute="trailing" constant="-16" id="44k-IW-WIh"/>
+                            <constraint firstItem="pkx-Ci-B4p" firstAttribute="top" secondItem="aW4-Q2-WtI" secondAttribute="top" id="6a2-dJ-8Cq"/>
+                            <constraint firstAttribute="centerY" secondItem="pkx-Ci-B4p" secondAttribute="centerY" constant="-0.5" id="mA2-9e-K7v"/>
+                            <constraint firstAttribute="centerX" secondItem="pkx-Ci-B4p" secondAttribute="centerX" id="pk1-ni-UoC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QHs-xK-Y8z"/>
+                    <connections>
+                        <outlet property="mapView" destination="pkx-Ci-B4p" id="Xz4-X7-fLn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ijK-ne-KyD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039" y="347"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="blb-MR-qyM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8sa-qa-MhZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dUg-te-myy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="n2Y-u5-tBE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OK8-Ob-G9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="162" y="343"/>
         </scene>
@@ -81,4 +137,5 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
 </document>
