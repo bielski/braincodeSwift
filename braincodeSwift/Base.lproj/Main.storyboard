@@ -23,6 +23,9 @@
                                 <state key="normal" title="REJESTRACJA">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="MrK-Fw-5Bx" kind="push" id="Sui-O0-VFM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhd-xS-Vfe">
                                 <rect key="frame" x="75" y="375" width="171" height="30"/>
@@ -40,6 +43,9 @@
                                 <state key="normal" title="PARTNERZY">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="YU2-zf-dh4" kind="push" id="a8k-BK-2eT"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="braincode.png" translatesAutoresizingMaskIntoConstraints="NO" id="kXl-ET-fDv">
                                 <rect key="frame" x="52" y="54" width="217" height="220"/>
@@ -76,7 +82,26 @@
             </objects>
             <point key="canvasLocation" x="694" y="343"/>
         </scene>
-        <!--Map View Controller-->
+        <!--REJESTRACJA-->
+        <scene sceneID="z1z-1d-vCQ">
+            <objects>
+                <viewController id="MrK-Fw-5Bx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZrY-fS-SQB"/>
+                        <viewControllerLayoutGuide type="bottom" id="I2R-7S-bE4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ff8-lV-RgB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="REJESTRACJA" id="sL5-hf-m05"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mPN-ZD-sHy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034" y="-284"/>
+        </scene>
+        <!--LOKALIZACJA-->
         <scene sceneID="07C-0M-0O6">
             <objects>
                 <viewController id="aS7-v1-wx5" customClass="MapViewController" customModule="braincodeSwift" customModuleProvider="target" sceneMemberID="viewController">
@@ -101,7 +126,7 @@
                             <constraint firstAttribute="centerX" secondItem="pkx-Ci-B4p" secondAttribute="centerX" id="pk1-ni-UoC"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="QHs-xK-Y8z"/>
+                    <navigationItem key="navigationItem" title="LOKALIZACJA" id="QHs-xK-Y8z"/>
                     <connections>
                         <outlet property="mapView" destination="pkx-Ci-B4p" id="Xz4-X7-fLn"/>
                     </connections>
@@ -109,6 +134,78 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ijK-ne-KyD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1039" y="347"/>
+        </scene>
+        <!--PARTNERZY-->
+        <scene sceneID="rGa-NE-2Ee">
+            <objects>
+                <viewController id="YU2-zf-dh4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="adI-ze-plA"/>
+                        <viewControllerLayoutGuide type="bottom" id="EN0-Ea-ARk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bKr-Az-OXo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="te.png" translatesAutoresizingMaskIntoConstraints="NO" id="fPl-P1-eoC">
+                                <rect key="frame" x="57" y="108" width="52" height="90"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="torun.png" translatesAutoresizingMaskIntoConstraints="NO" id="1WY-Rq-XiJ">
+                                <rect key="frame" x="29" y="232" width="109" height="122"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="agh.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tvc-yL-zy4">
+                                <rect key="frame" x="157" y="237" width="109" height="117"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wawa.png" translatesAutoresizingMaskIntoConstraints="NO" id="PBm-nU-hzO">
+                                <rect key="frame" x="33" y="388" width="100" height="107"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="uam.png" translatesAutoresizingMaskIntoConstraints="NO" id="QKD-JQ-oMd">
+                                <rect key="frame" x="169" y="103" width="85" height="110"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QKD-JQ-oMd" firstAttribute="top" secondItem="adI-ze-plA" secondAttribute="bottom" constant="39" id="18k-C2-7y0"/>
+                            <constraint firstItem="EN0-Ea-ARk" firstAttribute="top" secondItem="1WY-Rq-XiJ" secondAttribute="bottom" constant="214" id="6HJ-rU-rTo"/>
+                            <constraint firstItem="EN0-Ea-ARk" firstAttribute="top" secondItem="PBm-nU-hzO" secondAttribute="bottom" constant="73" id="83a-v1-N9G"/>
+                            <constraint firstItem="Tvc-yL-zy4" firstAttribute="top" secondItem="QKD-JQ-oMd" secondAttribute="bottom" constant="24" id="9s5-sS-eGk"/>
+                            <constraint firstItem="PBm-nU-hzO" firstAttribute="top" secondItem="1WY-Rq-XiJ" secondAttribute="bottom" constant="34" id="Gy4-XW-Hyq"/>
+                            <constraint firstItem="EN0-Ea-ARk" firstAttribute="top" secondItem="fPl-P1-eoC" secondAttribute="bottom" constant="370" id="HCK-nU-LEW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PBm-nU-hzO" secondAttribute="trailing" constant="171" id="OTr-hA-OQb"/>
+                            <constraint firstItem="fPl-P1-eoC" firstAttribute="leading" secondItem="bKr-Az-OXo" secondAttribute="leadingMargin" constant="41" id="PF5-M9-sBa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tvc-yL-zy4" secondAttribute="trailing" constant="38" id="QFg-xA-psz"/>
+                            <constraint firstItem="Tvc-yL-zy4" firstAttribute="leading" secondItem="1WY-Rq-XiJ" secondAttribute="trailing" constant="19" id="TMw-20-7mK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fPl-P1-eoC" secondAttribute="trailing" constant="195" id="VID-Ac-abJ"/>
+                            <constraint firstItem="EN0-Ea-ARk" firstAttribute="top" secondItem="QKD-JQ-oMd" secondAttribute="bottom" constant="355" id="Vw5-w9-eQi"/>
+                            <constraint firstItem="1WY-Rq-XiJ" firstAttribute="top" secondItem="fPl-P1-eoC" secondAttribute="bottom" constant="34" id="YTI-X9-hbw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QKD-JQ-oMd" secondAttribute="trailing" constant="50" id="Zfl-06-d0H"/>
+                            <constraint firstItem="QKD-JQ-oMd" firstAttribute="leading" secondItem="fPl-P1-eoC" secondAttribute="trailing" constant="60" id="aS3-hh-d9D"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1WY-Rq-XiJ" secondAttribute="trailing" constant="166" id="bg9-QV-HJc"/>
+                            <constraint firstItem="EN0-Ea-ARk" firstAttribute="top" secondItem="Tvc-yL-zy4" secondAttribute="bottom" constant="214" id="dkO-cc-262"/>
+                            <constraint firstItem="fPl-P1-eoC" firstAttribute="top" secondItem="adI-ze-plA" secondAttribute="bottom" constant="44" id="iRe-PC-cu7"/>
+                            <constraint firstItem="1WY-Rq-XiJ" firstAttribute="leading" secondItem="bKr-Az-OXo" secondAttribute="leadingMargin" constant="13" id="tIU-YH-hNe"/>
+                            <constraint firstItem="PBm-nU-hzO" firstAttribute="leading" secondItem="bKr-Az-OXo" secondAttribute="leadingMargin" constant="17" id="zBZ-xZ-bEa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PARTNERZY" id="tec-ia-mNu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DFK-gS-UP1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039" y="992"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QWn-Zj-9GO">
+            <objects>
+                <viewController id="kz1-oE-zuq" sceneMemberID="viewController">
+                    <webView key="view" contentMode="scaleToFill" id="LqF-3p-4aL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </webView>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8n5-W9-kuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1394" y="992"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="blb-MR-qyM">
@@ -130,7 +227,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="agh.png" width="138" height="220"/>
         <image name="braincode.png" width="517" height="517"/>
+        <image name="te.png" width="217" height="215"/>
+        <image name="torun.png" width="232" height="222"/>
+        <image name="uam.png" width="196" height="218"/>
+        <image name="wawa.png" width="356" height="226"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
