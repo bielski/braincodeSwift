@@ -21,6 +21,10 @@
 		9C2CDDD51AAB69720082627E /* agh.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C2CDDD31AAB69720082627E /* agh.png */; };
 		9C2CDDD71AAB69780082627E /* wawa.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C2CDDD61AAB69780082627E /* wawa.png */; };
 		9C2CDDD81AAB69780082627E /* wawa.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C2CDDD61AAB69780082627E /* wawa.png */; };
+		9C2CDDDA1AAB70D10082627E /* PartnersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2CDDD91AAB70D10082627E /* PartnersViewController.swift */; };
+		9C2CDDDB1AAB70D10082627E /* PartnersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2CDDD91AAB70D10082627E /* PartnersViewController.swift */; };
+		9C2CDDDD1AAB74020082627E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2CDDDC1AAB74020082627E /* WebViewController.swift */; };
+		9C2CDDDE1AAB74020082627E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2CDDDC1AAB74020082627E /* WebViewController.swift */; };
 		9C5BCE2E1AAAEFFF008277C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5BCE2D1AAAEFFF008277C7 /* AppDelegate.swift */; };
 		9C5BCE301AAAEFFF008277C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5BCE2F1AAAEFFF008277C7 /* ViewController.swift */; };
 		9C5BCE331AAAEFFF008277C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5BCE311AAAEFFF008277C7 /* Main.storyboard */; };
@@ -51,6 +55,8 @@
 		9C2CDDD01AAB696D0082627E /* torun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = torun.png; sourceTree = "<group>"; };
 		9C2CDDD31AAB69720082627E /* agh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = agh.png; sourceTree = "<group>"; };
 		9C2CDDD61AAB69780082627E /* wawa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wawa.png; sourceTree = "<group>"; };
+		9C2CDDD91AAB70D10082627E /* PartnersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartnersViewController.swift; sourceTree = "<group>"; };
+		9C2CDDDC1AAB74020082627E /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		9C5BCE281AAAEFFF008277C7 /* braincodeSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = braincodeSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5BCE2C1AAAEFFF008277C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C5BCE2D1AAAEFFF008277C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +125,8 @@
 				9C5BCE2D1AAAEFFF008277C7 /* AppDelegate.swift */,
 				9C5BCE2F1AAAEFFF008277C7 /* ViewController.swift */,
 				9C2CDDC81AAB5B5E0082627E /* MapViewController.swift */,
+				9C2CDDD91AAB70D10082627E /* PartnersViewController.swift */,
+				9C2CDDDC1AAB74020082627E /* WebViewController.swift */,
 				9C5BCE311AAAEFFF008277C7 /* Main.storyboard */,
 				9C2CDDC61AAB19340082627E /* BraincodeColors.swift */,
 				9C5BCE341AAAEFFF008277C7 /* Images.xcassets */,
@@ -317,6 +325,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C5BCE301AAAEFFF008277C7 /* ViewController.swift in Sources */,
+				9C2CDDDD1AAB74020082627E /* WebViewController.swift in Sources */,
+				9C2CDDDA1AAB70D10082627E /* PartnersViewController.swift in Sources */,
 				9C2CDDC71AAB19340082627E /* BraincodeColors.swift in Sources */,
 				9C5BCE2E1AAAEFFF008277C7 /* AppDelegate.swift in Sources */,
 				9C2CDDC91AAB5B5E0082627E /* MapViewController.swift in Sources */,
@@ -327,8 +337,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C2CDDDB1AAB70D10082627E /* PartnersViewController.swift in Sources */,
 				9C5BCE441AAAEFFF008277C7 /* braincodeSwiftTests.swift in Sources */,
 				9C5BCE551AAAF13E008277C7 /* BraincodeTestCase.swift in Sources */,
+				9C2CDDDE1AAB74020082627E /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,6 +21,7 @@
                                 <rect key="frame" x="75" y="322" width="171" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="REJESTRACJA">
+                                    <color key="titleColor" red="0.5607843137254902" green="0.27450980392156865" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -31,6 +32,7 @@
                                 <rect key="frame" x="75" y="375" width="171" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="LOKALIZACJA">
+                                    <color key="titleColor" red="0.5607843137254902" green="0.27450980392156865" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -41,6 +43,7 @@
                                 <rect key="frame" x="75" y="428" width="171" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="PARTNERZY">
+                                    <color key="titleColor" red="0.5607843137254902" green="0.27450980392156865" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -51,7 +54,7 @@
                                 <rect key="frame" x="52" y="54" width="217" height="220"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.96470588235294119" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="fkk-Qg-aYG" firstAttribute="top" secondItem="kXl-ET-fDv" secondAttribute="bottom" constant="48" id="1Jz-nK-Ju4"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="fkk-Qg-aYG" secondAttribute="bottom" constant="216" id="6VB-Vl-AFD"/>
@@ -138,7 +141,7 @@
         <!--PARTNERZY-->
         <scene sceneID="rGa-NE-2Ee">
             <objects>
-                <viewController id="YU2-zf-dh4" sceneMemberID="viewController">
+                <viewController id="YU2-zf-dh4" customClass="PartnersViewController" customModule="braincodeSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="adI-ze-plA"/>
                         <viewControllerLayoutGuide type="bottom" id="EN0-Ea-ARk"/>
@@ -147,23 +150,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="te.png" translatesAutoresizingMaskIntoConstraints="NO" id="fPl-P1-eoC">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="te.png" translatesAutoresizingMaskIntoConstraints="NO" id="fPl-P1-eoC">
                                 <rect key="frame" x="57" y="108" width="52" height="90"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="VJj-LV-3d4" appends="YES" id="aBf-ms-RNi"/>
+                                </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="torun.png" translatesAutoresizingMaskIntoConstraints="NO" id="1WY-Rq-XiJ">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="torun.png" translatesAutoresizingMaskIntoConstraints="NO" id="1WY-Rq-XiJ">
                                 <rect key="frame" x="29" y="232" width="109" height="122"/>
+                                <gestureRecognizers/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="agh.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tvc-yL-zy4">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="agh.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tvc-yL-zy4">
                                 <rect key="frame" x="157" y="237" width="109" height="117"/>
+                                <gestureRecognizers/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wawa.png" translatesAutoresizingMaskIntoConstraints="NO" id="PBm-nU-hzO">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wawa.png" translatesAutoresizingMaskIntoConstraints="NO" id="PBm-nU-hzO">
                                 <rect key="frame" x="33" y="388" width="100" height="107"/>
+                                <gestureRecognizers/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="uam.png" translatesAutoresizingMaskIntoConstraints="NO" id="QKD-JQ-oMd">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="uam.png" translatesAutoresizingMaskIntoConstraints="NO" id="QKD-JQ-oMd">
                                 <rect key="frame" x="169" y="103" width="85" height="110"/>
+                                <gestureRecognizers/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="QKD-JQ-oMd" firstAttribute="top" secondItem="adI-ze-plA" secondAttribute="bottom" constant="39" id="18k-C2-7y0"/>
                             <constraint firstItem="EN0-Ea-ARk" firstAttribute="top" secondItem="1WY-Rq-XiJ" secondAttribute="bottom" constant="214" id="6HJ-rU-rTo"/>
@@ -188,20 +200,37 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="PARTNERZY" id="tec-ia-mNu"/>
+                    <connections>
+                        <outlet property="cracow" destination="fPl-P1-eoC" id="4gY-oF-tWu"/>
+                        <outlet property="cracowAgh" destination="Tvc-yL-zy4" id="BVp-KO-k4y"/>
+                        <outlet property="poznan" destination="QKD-JQ-oMd" id="SmR-3J-PjC"/>
+                        <outlet property="torun" destination="1WY-Rq-XiJ" id="Srj-kz-Xnc"/>
+                        <outlet property="warsaw" destination="PBm-nU-hzO" id="vXp-wS-TR0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DFK-gS-UP1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="VJj-LV-3d4">
+                    <connections>
+                        <action selector="setUrlForCracow:" destination="YU2-zf-dh4" id="bMe-BR-wsE"/>
+                        <segue destination="kz1-oE-zuq" kind="push" identifier="web" id="LgK-dF-cJN"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1039" y="992"/>
         </scene>
-        <!--View Controller-->
+        <!--Web View Controller-->
         <scene sceneID="QWn-Zj-9GO">
             <objects>
-                <viewController id="kz1-oE-zuq" sceneMemberID="viewController">
-                    <webView key="view" contentMode="scaleToFill" id="LqF-3p-4aL">
+                <viewController id="kz1-oE-zuq" customClass="WebViewController" customModule="braincodeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <webView key="view" contentMode="scaleToFill" id="3eL-4J-GHr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </webView>
+                    <navigationItem key="navigationItem" id="rmZ-GV-q08"/>
+                    <connections>
+                        <outlet property="webView" destination="3eL-4J-GHr" id="ckD-dH-ON6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8n5-W9-kuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

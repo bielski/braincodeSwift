@@ -16,7 +16,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.setupButtons(self.registrationButton)
+        self.setupButtons(self.localizationButton)
+        self.setupButtons(self.partnersButton)
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,8 +27,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func setupButtons() {
+    func setupButtons(button: UIButton) {
+        button.layer.borderWidth = 1.0
+        button.layer.borderColor = UIColor.lightGrayColor().CGColor
+        button.layer.setNeedsDisplay()
     }
-
 }
 
