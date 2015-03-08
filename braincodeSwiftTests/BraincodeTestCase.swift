@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class MyPreciousTests: KIFTestCase {
     var tester : KIFUITestActor {
         get {
@@ -27,5 +26,9 @@ class MyPreciousTests: KIFTestCase {
     func testLabel() {
         tester.waitForViewWithAccessibilityLabel("Label")
     }
+    
+    // Test checking whether map view and annotation appeared
+    // Test checking whether map view can be swiped
+    // Test checking partners logos and switching to webview
     
 }
