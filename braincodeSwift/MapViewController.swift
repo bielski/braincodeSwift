@@ -22,6 +22,8 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.mapView.accessibilityLabel = "mapView"
+
         // Do any additional setup after loading the view.
     }
 
@@ -42,8 +44,9 @@ class MapViewController: UIViewController {
         
         let annotation = MKPointAnnotation()
         annotation.setCoordinate(zoomLocation)
-        annotation.title = "UAM Morasko"
+        annotation.title = "UAM"
         annotation.subtitle = "Braincode hackathon #2"
+
         self.mapView.addAnnotation(annotation)
     }
     

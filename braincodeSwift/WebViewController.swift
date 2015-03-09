@@ -18,6 +18,9 @@ class WebViewController: UIViewController {
         super.viewDidLoad()
         var request = NSURLRequest(URL: self.websiteUrl!)
         self.webView.loadRequest(request)
+
+        self.webView.accessibilityLabel = "webView"
+        self.navigationItem.backBarButtonItem?.accessibilityLabel = "Back"
     }
 
     override func didReceiveMemoryWarning() {

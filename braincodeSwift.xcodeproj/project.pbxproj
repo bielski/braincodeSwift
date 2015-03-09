@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43774E4A1AAE0FB3004E10C2 /* MapViewTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43774E491AAE0FB3004E10C2 /* MapViewTestCase.swift */; };
+		43774E4C1AAE132E004E10C2 /* WebViewTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43774E4B1AAE132E004E10C2 /* WebViewTestCase.swift */; };
 		6F17CB5CA058B33A1DF5C809 /* libPods-braincodeSwiftTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5668D95D7F597EEEFD16F82E /* libPods-braincodeSwiftTests.a */; };
 		9C2CDDC51AAB17D70082627E /* braincode.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C2CDDC41AAB17D70082627E /* braincode.png */; };
 		9C2CDDC71AAB19340082627E /* BraincodeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2CDDC61AAB19340082627E /* BraincodeColors.swift */; };
@@ -30,8 +32,6 @@
 		9C5BCE331AAAEFFF008277C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5BCE311AAAEFFF008277C7 /* Main.storyboard */; };
 		9C5BCE351AAAEFFF008277C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C5BCE341AAAEFFF008277C7 /* Images.xcassets */; };
 		9C5BCE381AAAEFFF008277C7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C5BCE361AAAEFFF008277C7 /* LaunchScreen.xib */; };
-		9C5BCE441AAAEFFF008277C7 /* braincodeSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5BCE431AAAEFFF008277C7 /* braincodeSwiftTests.swift */; };
-		9C5BCE551AAAF13E008277C7 /* BraincodeTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5BCE541AAAF13E008277C7 /* BraincodeTestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		0CC6CE7DFA5C9493D0BCC11A /* Pods-braincodeSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-braincodeSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-braincodeSwiftTests/Pods-braincodeSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		43774E491AAE0FB3004E10C2 /* MapViewTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewTestCase.swift; sourceTree = "<group>"; };
+		43774E4B1AAE132E004E10C2 /* WebViewTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewTestCase.swift; sourceTree = "<group>"; };
 		5668D95D7F597EEEFD16F82E /* libPods-braincodeSwiftTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-braincodeSwiftTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C2CDDC41AAB17D70082627E /* braincode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = braincode.png; sourceTree = "<group>"; };
 		9C2CDDC61AAB19340082627E /* BraincodeColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BraincodeColors.swift; sourceTree = "<group>"; };
@@ -66,9 +68,7 @@
 		9C5BCE371AAAEFFF008277C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9C5BCE3D1AAAEFFF008277C7 /* braincodeSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = braincodeSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5BCE421AAAEFFF008277C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C5BCE431AAAEFFF008277C7 /* braincodeSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = braincodeSwiftTests.swift; sourceTree = "<group>"; };
 		9C5BCE4D1AAAF0A8008277C7 /* braincodeSwiftTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "braincodeSwiftTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		9C5BCE541AAAF13E008277C7 /* BraincodeTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BraincodeTestCase.swift; sourceTree = "<group>"; };
 		AE633F27CF4E8595D6D3DE58 /* Pods-braincodeSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-braincodeSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-braincodeSwiftTests/Pods-braincodeSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,8 +147,8 @@
 		9C5BCE401AAAEFFF008277C7 /* braincodeSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				9C5BCE541AAAF13E008277C7 /* BraincodeTestCase.swift */,
-				9C5BCE431AAAEFFF008277C7 /* braincodeSwiftTests.swift */,
+				43774E491AAE0FB3004E10C2 /* MapViewTestCase.swift */,
+				43774E4B1AAE132E004E10C2 /* WebViewTestCase.swift */,
 				9C5BCE411AAAEFFF008277C7 /* Supporting Files */,
 				9C5BCE4D1AAAF0A8008277C7 /* braincodeSwiftTests-Bridging-Header.h */,
 			);
@@ -338,9 +338,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C2CDDDB1AAB70D10082627E /* PartnersViewController.swift in Sources */,
-				9C5BCE441AAAEFFF008277C7 /* braincodeSwiftTests.swift in Sources */,
-				9C5BCE551AAAF13E008277C7 /* BraincodeTestCase.swift in Sources */,
 				9C2CDDDE1AAB74020082627E /* WebViewController.swift in Sources */,
+				43774E4A1AAE0FB3004E10C2 /* MapViewTestCase.swift in Sources */,
+				43774E4C1AAE132E004E10C2 /* WebViewTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

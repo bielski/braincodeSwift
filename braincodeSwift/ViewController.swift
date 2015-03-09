@@ -20,6 +20,9 @@ class ViewController: UIViewController {
         self.setupButtons(self.registrationButton)
         self.setupButtons(self.localizationButton)
         self.setupButtons(self.partnersButton)
+
+        self.localizationButton.accessibilityLabel = "localizationButton"
+        self.partnersButton.accessibilityLabel = "partnersButton"
     }
 
     override func didReceiveMemoryWarning() {
