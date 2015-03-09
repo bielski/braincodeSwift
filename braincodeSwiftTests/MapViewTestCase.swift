@@ -22,12 +22,14 @@ class MapViewTestCase: KIFTestCase {
     }
 
     func testMapViewAnnotation() {
+
         // Wait and tap localization button
         // Wait for map view
         // Wait and tap annotation mark
     }
 
     func testMapViewSwipe() {
+        
         // Wait and tap localization button
         // Wait for map view
         // Swipe map to check proper user interaction
