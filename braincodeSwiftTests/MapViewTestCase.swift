@@ -29,7 +29,7 @@ class MapViewTestCase: KIFTestCase {
     }
 
     func testMapViewSwipe() {
-        
+
         // Wait and tap localization button
         // Wait for map view
         // Swipe map to check proper user interaction
