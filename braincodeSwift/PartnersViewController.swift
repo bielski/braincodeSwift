@@ -9,13 +9,6 @@
 import UIKit
 
 class PartnersViewController: UIViewController {
-
-    var urlAddress = NSURL()
-    var dict = ["cracow" : "http://www.kt.agh.edu.pl",
-                "poznan" : "https://amu.edu.pl/",
-                 "torun" : "http://www.umk.pl/",
-                "warsaw" : "http://www.mimuw.edu.pl/",
-             "cracowAgh" : "http://www.agh.edu.pl/"]
     
     @IBOutlet var cracow: UIImageView!
     @IBOutlet var poznan: UIImageView!
@@ -24,17 +17,31 @@ class PartnersViewController: UIViewController {
     @IBOutlet var warsaw: UIImageView!
     
     @IBOutlet var cracowGestureRecognizer: UITapGestureRecognizer!
-
     @IBOutlet var poznanGestureRecognizer: UITapGestureRecognizer!
+    @IBOutlet var torunGestureRecognizer: UITapGestureRecognizer!
+    @IBOutlet var aghGestureRecognizer: UITapGestureRecognizer!
+    @IBOutlet var warsawGestureRecognizer: UITapGestureRecognizer!
+    
+    var urlAddress = NSURL()
+    var dict = ["cracow" : "http://www.kt.agh.edu.pl",
+        "poznan" : "https://amu.edu.pl/",
+        "torun" : "http://www.umk.pl/",
+        "warsaw" : "http://www.mimuw.edu.pl/",
+        "cracowAgh" : "http://www.agh.edu.pl/"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setAccessiblityLabels()
-
-        self.cracowGestureRecognizer.addTarget(self, action: Selector("openWebView:"))
-        self.poznanGestureRecognizer.addTarget(self, action: Selector("openWebView:"))
+        self.addGestureRecognizers()
     }
     
-    func addGestureRecognizers() {}
+    func addGestureRecognizers() {
+        self.cracowGestureRecognizer.addTarget(self, action: Selector("openWebView:"))
+        self.poznanGestureRecognizer.addTarget(self, action: Selector("openWebView:"))
+        self.torunGestureRecognizer.addTarget(self, action: Selector("openWebView:"))
+        self.aghGestureRecognizer.addTarget(self, action: Selector("openWebView:"))
+        self.warsawGestureRecognizer.addTarget(self, action: Selector("openWebView:"))
+    }
     
     func openWebView(sender: UITapGestureRecognizer) {
         var url = dict[sender.view?.accessibilityLabel as String!]
