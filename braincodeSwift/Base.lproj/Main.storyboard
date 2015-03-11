@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8sa-qa-MhZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8sa-qa-MhZ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -88,7 +88,7 @@
         <!--REJESTRACJA-->
         <scene sceneID="z1z-1d-vCQ">
             <objects>
-                <viewController id="MrK-Fw-5Bx" sceneMemberID="viewController">
+                <viewController id="MrK-Fw-5Bx" customClass="RegistrationViewController" customModule="braincodeSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZrY-fS-SQB"/>
                         <viewControllerLayoutGuide type="bottom" id="I2R-7S-bE4"/>
@@ -96,9 +96,41 @@
                     <view key="view" contentMode="scaleToFill" id="Ff8-lV-RgB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="wJZ-E4-ivY">
+                                <rect key="frame" x="0.0" y="164" width="320" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="NkF-fg-GE5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dsw-3j-HdT">
+                                <rect key="frame" x="0.0" y="256" width="320" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Erl-fN-Tcw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.96470588235294119" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="dsw-3j-HdT" secondAttribute="trailing" constant="-16" id="063-FG-sMP"/>
+                            <constraint firstItem="dsw-3j-HdT" firstAttribute="leading" secondItem="Ff8-lV-RgB" secondAttribute="leadingMargin" constant="-16" id="1AQ-2c-7o3"/>
+                            <constraint firstItem="wJZ-E4-ivY" firstAttribute="leading" secondItem="Ff8-lV-RgB" secondAttribute="leadingMargin" constant="-16" id="3XG-6X-9x0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wJZ-E4-ivY" secondAttribute="trailing" constant="-16" id="8vU-lC-3DS"/>
+                            <constraint firstAttribute="centerX" secondItem="dsw-3j-HdT" secondAttribute="centerX" id="IkH-fh-X9E"/>
+                            <constraint firstItem="dsw-3j-HdT" firstAttribute="top" secondItem="wJZ-E4-ivY" secondAttribute="bottom" constant="37" id="LgX-Qf-CwG"/>
+                            <constraint firstAttribute="centerX" secondItem="wJZ-E4-ivY" secondAttribute="centerX" id="QeJ-yr-WVf"/>
+                            <constraint firstItem="wJZ-E4-ivY" firstAttribute="top" secondItem="ZrY-fS-SQB" secondAttribute="bottom" constant="100" id="ypw-wE-N1m"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="REJESTRACJA" id="sL5-hf-m05"/>
+                    <connections>
+                        <outlet property="lastNameTextField" destination="dsw-3j-HdT" id="zq2-jb-AYU"/>
+                        <outlet property="nameTextField" destination="wJZ-E4-ivY" id="NSF-X8-2ZY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mPN-ZD-sHy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
