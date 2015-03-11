@@ -16,23 +16,29 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.setupButtons(self.registrationButton)
-        self.setupButtons(self.localizationButton)
-        self.setupButtons(self.partnersButton)
+        self.setButtons()
+        self.setAccessibilityLabels()
+    }
 
+    func setButtons() {
+        self.setBorderForButtonWithColor(self.registrationButton, color: UIColor.lightBlue())
+        self.setBorderForButtonWithColor(self.localizationButton, color: UIColor.blue())
+        self.setBorderForButtonWithColor(self.partnersButton, color: UIColor.darkBlue())
+    }
+
+    func setBorderForButtonWithColor(button: UIButton, color: UIColor) {
+        button.layer.borderWidth = 1.0
+        button.layer.borderColor = color.CGColor
+        button.layer.setNeedsDisplay()
+    }
+    
+    func setAccessibilityLabels() {
         self.localizationButton.accessibilityLabel = "localizationButton"
         self.partnersButton.accessibilityLabel = "partnersButton"
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-    
-    func setupButtons(button: UIButton) {
-        button.layer.borderWidth = 1.0
-        button.layer.borderColor = UIColor.lightGrayColor().CGColor
-        button.layer.setNeedsDisplay()
     }
 }
 
