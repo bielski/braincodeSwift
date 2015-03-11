@@ -197,7 +197,7 @@
                                 </accessibility>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="VJj-LV-3d4" appends="YES" id="aBf-ms-RNi"/>
+                                    <outletCollection property="gestureRecognizers" destination="mzI-a1-PPa" appends="YES" id="cIw-jP-FIm"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="torun.png" translatesAutoresizingMaskIntoConstraints="NO" id="1WY-Rq-XiJ">
@@ -227,6 +227,9 @@
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="tLR-uI-Exl" appends="YES" id="HkZ-e0-7NK"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -261,18 +264,16 @@
                     <connections>
                         <outlet property="cracow" destination="fPl-P1-eoC" id="4gY-oF-tWu"/>
                         <outlet property="cracowAgh" destination="Tvc-yL-zy4" id="BVp-KO-k4y"/>
+                        <outlet property="cracowGestureRecognizer" destination="mzI-a1-PPa" id="Gti-Vi-1kA"/>
                         <outlet property="poznan" destination="QKD-JQ-oMd" id="SmR-3J-PjC"/>
+                        <outlet property="poznanGestureRecognizer" destination="tLR-uI-Exl" id="wdj-UW-seZ"/>
                         <outlet property="torun" destination="1WY-Rq-XiJ" id="Srj-kz-Xnc"/>
                         <outlet property="warsaw" destination="PBm-nU-hzO" id="vXp-wS-TR0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DFK-gS-UP1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="VJj-LV-3d4">
-                    <connections>
-                        <action selector="setUrlForCracow:" destination="YU2-zf-dh4" id="bMe-BR-wsE"/>
-                        <segue destination="kz1-oE-zuq" kind="push" identifier="web" id="LgK-dF-cJN"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <tapGestureRecognizer id="mzI-a1-PPa"/>
+                <tapGestureRecognizer id="tLR-uI-Exl"/>
             </objects>
             <point key="canvasLocation" x="1039" y="992"/>
         </scene>

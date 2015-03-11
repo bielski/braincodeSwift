@@ -10,7 +10,12 @@ import UIKit
 
 class PartnersViewController: UIViewController {
 
-    var urlAddress = NSURL(string: "http://www.kt.agh.edu.pl")
+    var urlAddress = NSURL()
+    var dict = ["cracow" : "http://www.kt.agh.edu.pl",
+                "poznan" : "https://amu.edu.pl/",
+                 "torun" : "http://www.umk.pl/",
+                "warsaw" : "http://www.mimuw.edu.pl/",
+             "cracowAgh" : "http://www.agh.edu.pl/"]
     
     @IBOutlet var cracow: UIImageView!
     @IBOutlet var poznan: UIImageView!
@@ -18,30 +23,37 @@ class PartnersViewController: UIViewController {
     @IBOutlet var cracowAgh: UIImageView!
     @IBOutlet var warsaw: UIImageView!
     
+    @IBOutlet var cracowGestureRecognizer: UITapGestureRecognizer!    
+    @IBOutlet var poznanGestureRecognizer: UITapGestureRecognizer!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.setAccessiblityLabels()
+
+        self.cracowGestureRecognizer.addTarget(self, action: Selector("openWebView:"))
+        self.poznanGestureRecognizer.addTarget(self, action: Selector("openWebView:"))
+    }
+
+//    @IBAction func setUrlForCracow(sender: UITapGestureRecognizer) {
+//        self.urlAddress = NSURL(string: "http://www.kt.agh.edu.pl")
+//    }
+    
+    func openWebView(sender: UITapGestureRecognizer) {
+        var cos = sender.view?.accessibilityLabel as String!
+        self.urlAddress = NSURL(string: cos)!
+
+        //self.urlAddress = NSURL(string: "http://www.kt.agh.edu.pl")
+    }
+    
+    func setAccessiblityLabels() {
         self.cracow.accessibilityLabel = "cracow"
         self.poznan.accessibilityLabel = "poznan"
         self.torun.accessibilityLabel = "torun"
         self.cracowAgh.accessibilityLabel = "cracowAgh"
         self.warsaw.accessibilityLabel = "warsaw"
     }
-
-    @IBAction func setUrlForCracow(sender: UITapGestureRecognizer) {
-        self.urlAddress = NSURL(string: "http://www.kt.agh.edu.pl")
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-
-        if segue.identifier == "web" {
-            let viewController:WebViewController = segue.destinationViewController as WebViewController
-            viewController.websiteUrl = self.urlAddress
-        }
     }
 }
