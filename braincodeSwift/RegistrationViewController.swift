@@ -9,16 +9,14 @@
 import UIKit
 
 class RegistrationViewController: UIViewController {
-
+    
+    @IBOutlet var nameTextField: UITextField!
+    @IBOutlet var lastNameTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setTextFields()
     }
-    
-    @IBOutlet var nameTextField: UITextField!
-
-    @IBOutlet var lastNameTextField: UITextField!
     
     func setTextFields() {
         self.nameTextField.layer.backgroundColor = UIColor.whiteColor().CGColor
@@ -29,7 +27,6 @@ class RegistrationViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation
@@ -40,5 +37,5 @@ class RegistrationViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
 }

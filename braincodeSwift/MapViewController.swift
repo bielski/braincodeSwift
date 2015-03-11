@@ -21,10 +21,7 @@ class MapViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.mapView.accessibilityLabel = "mapView"
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,7 +30,6 @@ class MapViewController: UIViewController {
     }
     
     func setZoomLocation() {
-        
         let span = MKCoordinateSpanMake(0.01, 0.01)
         let region = MKCoordinateRegion(center: zoomLocation, span:span)
         
@@ -41,7 +37,6 @@ class MapViewController: UIViewController {
     }
     
     func setAnnotation() {
-        
         let annotation = MKPointAnnotation()
         annotation.setCoordinate(zoomLocation)
         annotation.title = "UAM"

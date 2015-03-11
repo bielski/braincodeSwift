@@ -50,7 +50,7 @@
                                     <segue destination="YU2-zf-dh4" kind="push" id="a8k-BK-2eT"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="braincode.png" translatesAutoresizingMaskIntoConstraints="NO" id="kXl-ET-fDv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="braincode.png" translatesAutoresizingMaskIntoConstraints="NO" id="kXl-ET-fDv">
                                 <rect key="frame" x="52" y="54" width="217" height="220"/>
                             </imageView>
                         </subviews>
