@@ -12,13 +12,9 @@ import WebKit
 class WebViewController: UIViewController {
 
     @IBOutlet var webView: UIWebView!
-    var websiteUrl = NSURL(string: "http://www.kt.agh.edu.pl")
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        var request = NSURLRequest(URL: self.websiteUrl!)
-        self.webView.loadRequest(request)
-
         self.webView.accessibilityLabel = "webView"
         self.navigationItem.backBarButtonItem?.accessibilityLabel = "Back"
     }

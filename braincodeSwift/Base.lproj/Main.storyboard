@@ -264,9 +264,9 @@
                     <connections>
                         <outlet property="cracow" destination="fPl-P1-eoC" id="4gY-oF-tWu"/>
                         <outlet property="cracowAgh" destination="Tvc-yL-zy4" id="BVp-KO-k4y"/>
-                        <outlet property="cracowGestureRecognizer" destination="mzI-a1-PPa" id="Gti-Vi-1kA"/>
+                        <outlet property="cracowGestureRecognizer" destination="mzI-a1-PPa" id="ul9-WT-fa4"/>
                         <outlet property="poznan" destination="QKD-JQ-oMd" id="SmR-3J-PjC"/>
-                        <outlet property="poznanGestureRecognizer" destination="tLR-uI-Exl" id="wdj-UW-seZ"/>
+                        <outlet property="poznanGestureRecognizer" destination="tLR-uI-Exl" id="1on-VC-xT7"/>
                         <outlet property="torun" destination="1WY-Rq-XiJ" id="Srj-kz-Xnc"/>
                         <outlet property="warsaw" destination="PBm-nU-hzO" id="vXp-wS-TR0"/>
                     </connections>
@@ -280,7 +280,8 @@
         <!--Web View Controller-->
         <scene sceneID="QWn-Zj-9GO">
             <objects>
-                <viewController id="kz1-oE-zuq" customClass="WebViewController" customModule="braincodeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8n5-W9-kuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="webView" id="kz1-oE-zuq" customClass="WebViewController" customModule="braincodeSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <webView key="view" contentMode="scaleToFill" id="3eL-4J-GHr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -291,7 +292,6 @@
                         <outlet property="webView" destination="3eL-4J-GHr" id="ckD-dH-ON6"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8n5-W9-kuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1394" y="992"/>
         </scene>

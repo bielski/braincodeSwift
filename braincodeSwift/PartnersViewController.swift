@@ -23,9 +23,9 @@ class PartnersViewController: UIViewController {
     @IBOutlet var cracowAgh: UIImageView!
     @IBOutlet var warsaw: UIImageView!
     
-    @IBOutlet var cracowGestureRecognizer: UITapGestureRecognizer!    
-    @IBOutlet var poznanGestureRecognizer: UITapGestureRecognizer!
+    @IBOutlet var cracowGestureRecognizer: UITapGestureRecognizer!
 
+    @IBOutlet var poznanGestureRecognizer: UITapGestureRecognizer!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setAccessiblityLabels()
@@ -33,16 +33,18 @@ class PartnersViewController: UIViewController {
         self.cracowGestureRecognizer.addTarget(self, action: Selector("openWebView:"))
         self.poznanGestureRecognizer.addTarget(self, action: Selector("openWebView:"))
     }
-
-//    @IBAction func setUrlForCracow(sender: UITapGestureRecognizer) {
-//        self.urlAddress = NSURL(string: "http://www.kt.agh.edu.pl")
-//    }
+    
+    func addGestureRecognizers() {}
     
     func openWebView(sender: UITapGestureRecognizer) {
-        var cos = sender.view?.accessibilityLabel as String!
-        self.urlAddress = NSURL(string: cos)!
+        var url = dict[sender.view?.accessibilityLabel as String!]
+        self.urlAddress = NSURL(string: url!)!
+        var request = NSURLRequest(URL: self.urlAddress)
 
-        //self.urlAddress = NSURL(string: "http://www.kt.agh.edu.pl")
+        var webViewController = self.storyboard?.instantiateViewControllerWithIdentifier("webView") as WebViewController
+        webViewController.loadView()
+        webViewController.webView.loadRequest(request)
+        self.navigationController?.pushViewController(webViewController, animated: true)
     }
     
     func setAccessiblityLabels() {
