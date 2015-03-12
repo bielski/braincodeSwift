@@ -22,7 +22,6 @@ class MapViewTestCase: KIFTestCase {
     }
 
     func testMapViewAnnotation() {
-        tester.waitForViewWithAccessibilityLabel("localizationButton")
         // Wait and tap localization button
         // Wait for map view
         // Wait and tap annotation mark
