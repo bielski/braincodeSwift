@@ -36,9 +36,5 @@ class ViewController: UIViewController {
         self.localizationButton.accessibilityLabel = "localizationButton"
         self.partnersButton.accessibilityLabel = "partnersButton"
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
 }
 

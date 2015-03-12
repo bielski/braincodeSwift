@@ -49,8 +49,7 @@ class PartnersViewController: UIViewController {
         var request = NSURLRequest(URL: self.urlAddress)
 
         var webViewController = self.storyboard?.instantiateViewControllerWithIdentifier("webView") as WebViewController
-        webViewController.loadView()
-        webViewController.webView.loadRequest(request)
+        webViewController.urlRequest = request
         self.navigationController?.pushViewController(webViewController, animated: true)
     }
     
@@ -60,9 +59,5 @@ class PartnersViewController: UIViewController {
         self.torun.accessibilityLabel = "torun"
         self.cracowAgh.accessibilityLabel = "cracowAgh"
         self.warsaw.accessibilityLabel = "warsaw"
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
 }

@@ -22,9 +22,4 @@ class RegistrationViewController: UIViewController {
         self.nameTextField.layer.backgroundColor = UIColor.whiteColor().CGColor
         self.lastNameTextField.layer.backgroundColor = UIColor.whiteColor().CGColor
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 }

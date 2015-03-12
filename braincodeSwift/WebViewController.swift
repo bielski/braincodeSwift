@@ -12,14 +12,15 @@ import WebKit
 class WebViewController: UIViewController {
 
     @IBOutlet var webView: UIWebView!
+    var urlRequest: NSURLRequest!
 
+    override func viewWillAppear(animated: Bool) {
+        self.webView.loadRequest(self.urlRequest)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.webView.accessibilityLabel = "webView"
         self.navigationItem.backBarButtonItem?.accessibilityLabel = "Back"
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
 }

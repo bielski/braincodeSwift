@@ -39,8 +39,4 @@ class MapViewController: UIViewController {
 
         self.mapView.addAnnotation(annotation)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
 }
