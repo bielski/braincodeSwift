@@ -106,7 +106,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nazwisko" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dsw-3j-HdT">
-                                <rect key="frame" x="0.0" y="249" width="320" height="55"/>
+                                <rect key="frame" x="0.0" y="239" width="320" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="Erl-fN-Tcw"/>
                                 </constraints>
@@ -114,7 +114,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeQ-49-mq0">
-                                <rect key="frame" x="111" y="345" width="99" height="30"/>
+                                <rect key="frame" x="111" y="335" width="99" height="30"/>
                                 <state key="normal" title="ZAPISUJĘ SIĘ">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -128,7 +128,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="wJZ-E4-ivY" secondAttribute="trailing" constant="-16" id="8vU-lC-3DS"/>
                             <constraint firstAttribute="centerX" secondItem="OeQ-49-mq0" secondAttribute="centerX" constant="-0.5" id="9mX-XW-jMR"/>
                             <constraint firstAttribute="centerX" secondItem="dsw-3j-HdT" secondAttribute="centerX" id="IkH-fh-X9E"/>
-                            <constraint firstItem="dsw-3j-HdT" firstAttribute="top" secondItem="wJZ-E4-ivY" secondAttribute="bottom" constant="30" id="LgX-Qf-CwG"/>
+                            <constraint firstItem="dsw-3j-HdT" firstAttribute="top" secondItem="wJZ-E4-ivY" secondAttribute="bottom" constant="20" id="LgX-Qf-CwG"/>
                             <constraint firstAttribute="centerX" secondItem="wJZ-E4-ivY" secondAttribute="centerX" id="QeJ-yr-WVf"/>
                             <constraint firstItem="OeQ-49-mq0" firstAttribute="top" secondItem="dsw-3j-HdT" secondAttribute="bottom" constant="41" id="Wsz-gA-w7u"/>
                             <constraint firstItem="wJZ-E4-ivY" firstAttribute="top" secondItem="ZrY-fS-SQB" secondAttribute="bottom" constant="100" id="ypw-wE-N1m"/>
@@ -271,31 +271,45 @@
                     </view>
                     <navigationItem key="navigationItem" title="PARTNERZY" id="tec-ia-mNu"/>
                     <connections>
-                        <outlet property="aghGestureRecognizer" destination="KfN-m3-o7q" id="9h7-YM-x2H"/>
                         <outlet property="cracow" destination="fPl-P1-eoC" id="4gY-oF-tWu"/>
                         <outlet property="cracowAgh" destination="Tvc-yL-zy4" id="BVp-KO-k4y"/>
-                        <outlet property="cracowGestureRecognizer" destination="mzI-a1-PPa" id="ul9-WT-fa4"/>
                         <outlet property="poznan" destination="QKD-JQ-oMd" id="SmR-3J-PjC"/>
-                        <outlet property="poznanGestureRecognizer" destination="tLR-uI-Exl" id="1on-VC-xT7"/>
                         <outlet property="torun" destination="1WY-Rq-XiJ" id="Srj-kz-Xnc"/>
-                        <outlet property="torunGestureRecognizer" destination="mBD-we-PrY" id="rpg-Qq-v3y"/>
                         <outlet property="warsaw" destination="PBm-nU-hzO" id="vXp-wS-TR0"/>
-                        <outlet property="warsawGestureRecognizer" destination="35V-tV-fCS" id="rTu-Ck-CRh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DFK-gS-UP1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="mzI-a1-PPa"/>
-                <tapGestureRecognizer id="tLR-uI-Exl"/>
-                <tapGestureRecognizer id="mBD-we-PrY"/>
-                <tapGestureRecognizer id="KfN-m3-o7q"/>
-                <tapGestureRecognizer id="35V-tV-fCS"/>
+                <tapGestureRecognizer id="mzI-a1-PPa">
+                    <connections>
+                        <action selector="openWebView:" destination="YU2-zf-dh4" id="R5Y-S8-4Bq"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="tLR-uI-Exl">
+                    <connections>
+                        <action selector="openWebView:" destination="YU2-zf-dh4" id="E7E-EH-9eP"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="mBD-we-PrY">
+                    <connections>
+                        <action selector="openWebView:" destination="YU2-zf-dh4" id="dPu-iR-LOO"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="KfN-m3-o7q">
+                    <connections>
+                        <action selector="openWebView:" destination="YU2-zf-dh4" id="j3y-ST-oad"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="35V-tV-fCS">
+                    <connections>
+                        <action selector="openWebView:" destination="YU2-zf-dh4" id="7By-ux-vdk"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1039" y="992"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="QWn-Zj-9GO">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8n5-W9-kuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="webView" id="kz1-oE-zuq" customClass="WebViewController" customModule="braincodeSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <webView key="view" contentMode="scaleToFill" id="3eL-4J-GHr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -307,6 +321,7 @@
                         <outlet property="webView" destination="3eL-4J-GHr" id="ckD-dH-ON6"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8n5-W9-kuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1394" y="992"/>
         </scene>
