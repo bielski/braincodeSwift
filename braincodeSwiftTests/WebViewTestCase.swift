@@ -21,17 +21,10 @@ class WebViewTestCase: KIFTestCase {
     override func afterEach() {
     }
 
-    func testPartnersImagesShouldAppear() {
-
-        // Wait and tap partners button
-        // Wait for partners view
-        // Wait for all partners images to appear
-    }
-
     func testWebViewShouldAppear() {
 
         // Wait and tap partners button
-        // Wait for partners view
-        // Tap first image and check if web view appears
+        // Wait for partners view and partner image
+        // Tap image and check if the web view appears
     }
 }
