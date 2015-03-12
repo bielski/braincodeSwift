@@ -15,28 +15,23 @@ class MapViewController: UIViewController {
     let zoomLocation = CLLocationCoordinate2D(latitude: 52.467291, longitude: 16.927386)
     
     override func viewWillAppear(animated: Bool) {
-        self.setZoomLocation()
-        self.setAnnotation()
+        self.setUpZoomLocation()
+        self.setUpAnnotation()
     }
         
     override func viewDidLoad() {
         super.viewDidLoad()
         self.mapView.accessibilityLabel = "mapView"
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-    func setZoomLocation() {
+    func setUpZoomLocation() {
         let span = MKCoordinateSpanMake(0.01, 0.01)
         let region = MKCoordinateRegion(center: zoomLocation, span:span)
         
         self.mapView.setRegion(region, animated: true)
     }
     
-    func setAnnotation() {
+    func setUpAnnotation() {
         let annotation = MKPointAnnotation()
         annotation.setCoordinate(zoomLocation)
         annotation.title = "UAM"
@@ -44,15 +39,8 @@ class MapViewController: UIViewController {
 
         self.mapView.addAnnotation(annotation)
     }
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
-    */
-
 }

@@ -16,23 +16,23 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setButtons()
-        self.setAccessibilityLabels()
+        self.setUpButtons()
+        self.setUpAccessibilityLabels()
     }
 
-    func setButtons() {
-        self.setBorderForButtonWithColor(self.registrationButton, color: UIColor.lightBlue())
-        self.setBorderForButtonWithColor(self.localizationButton, color: UIColor.blue())
-        self.setBorderForButtonWithColor(self.partnersButton, color: UIColor.darkBlue())
+    func setUpButtons() {
+        self.setUpBorderForButtonWithColor(self.registrationButton, color: UIColor.lightBlue())
+        self.setUpBorderForButtonWithColor(self.localizationButton, color: UIColor.blue())
+        self.setUpBorderForButtonWithColor(self.partnersButton, color: UIColor.darkBlue())
     }
 
-    func setBorderForButtonWithColor(button: UIButton, color: UIColor) {
+    func setUpBorderForButtonWithColor(button: UIButton, color: UIColor) {
         button.layer.borderWidth = 1.0
         button.layer.borderColor = color.CGColor
         button.layer.setNeedsDisplay()
     }
     
-    func setAccessibilityLabels() {
+    func setUpAccessibilityLabels() {
         self.localizationButton.accessibilityLabel = "localizationButton"
         self.partnersButton.accessibilityLabel = "partnersButton"
     }

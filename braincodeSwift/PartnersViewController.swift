@@ -31,7 +31,7 @@ class PartnersViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setAccessiblityLabels()
+        self.setUpAccessiblityLabels()
         self.addGestureRecognizers()
     }
     
@@ -54,7 +54,7 @@ class PartnersViewController: UIViewController {
         self.navigationController?.pushViewController(webViewController, animated: true)
     }
     
-    func setAccessiblityLabels() {
+    func setUpAccessiblityLabels() {
         self.cracow.accessibilityLabel = "cracow"
         self.poznan.accessibilityLabel = "poznan"
         self.torun.accessibilityLabel = "torun"
