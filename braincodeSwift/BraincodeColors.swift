@@ -21,6 +21,6 @@ extension UIColor {
     
     class func darkBlue() -> UIColor {
         return UIColor(red: 6/255.0, green: 7/255.0, blue: 110/255.0, alpha: 0.4);
+
     }
-    
 }

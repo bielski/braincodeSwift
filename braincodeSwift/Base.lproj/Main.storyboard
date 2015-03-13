@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8sa-qa-MhZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8sa-qa-MhZ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -119,6 +119,9 @@
                                 <state key="normal" title="ZAPISUJĘ SIĘ">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="MrK-Fw-5Bx" eventType="touchUpInside" id="VY7-XZ-gNr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92549019610000005" green="0.96470588239999999" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -132,7 +135,7 @@
                             <constraint firstAttribute="centerX" secondItem="dsw-3j-HdT" secondAttribute="centerX" id="IkH-fh-X9E"/>
                             <constraint firstItem="dsw-3j-HdT" firstAttribute="top" secondItem="wJZ-E4-ivY" secondAttribute="bottom" constant="17" id="LgX-Qf-CwG"/>
                             <constraint firstAttribute="centerX" secondItem="wJZ-E4-ivY" secondAttribute="centerX" id="QeJ-yr-WVf"/>
-                            <constraint firstItem="OeQ-49-mq0" firstAttribute="top" secondItem="dsw-3j-HdT" secondAttribute="bottom" constant="46" id="Wsz-gA-w7u"/>
+                            <constraint firstItem="OeQ-49-mq0" firstAttribute="top" secondItem="dsw-3j-HdT" secondAttribute="bottom" constant="49" id="Wsz-gA-w7u"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OeQ-49-mq0" secondAttribute="trailing" constant="48" id="iiB-LR-0Rr"/>
                             <constraint firstItem="wJZ-E4-ivY" firstAttribute="top" secondItem="ZrY-fS-SQB" secondAttribute="bottom" constant="100" id="ypw-wE-N1m"/>
                         </constraints>
