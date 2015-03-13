@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0584313E65C367B93B3E6EB6 /* libPods-braincodeSwiftTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5668D95D7F597EEEFD16F82E /* libPods-braincodeSwiftTests.a */; };
 		9C2CDDC51AAB17D70082627E /* braincode.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C2CDDC41AAB17D70082627E /* braincode.png */; };
 		9C2CDDC71AAB19340082627E /* BraincodeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2CDDC61AAB19340082627E /* BraincodeColors.swift */; };
 		9C2CDDC91AAB5B5E0082627E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2CDDC81AAB5B5E0082627E /* MapViewController.swift */; };
@@ -65,7 +66,6 @@
 		9C5BCE371AAAEFFF008277C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9C5BCE3D1AAAEFFF008277C7 /* braincodeSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = braincodeSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5BCE421AAAEFFF008277C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C5BCE4D1AAAF0A8008277C7 /* braincodeSwiftTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "braincodeSwiftTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		AE633F27CF4E8595D6D3DE58 /* Pods-braincodeSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-braincodeSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-braincodeSwiftTests/Pods-braincodeSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0584313E65C367B93B3E6EB6 /* libPods-braincodeSwiftTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				9C5BCE411AAAEFFF008277C7 /* Supporting Files */,
-				9C5BCE4D1AAAF0A8008277C7 /* braincodeSwiftTests-Bridging-Header.h */,
 			);
 			path = braincodeSwiftTests;
 			sourceTree = "<group>";
@@ -197,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C5BCE4A1AAAEFFF008277C7 /* Build configuration list for PBXNativeTarget "braincodeSwiftTests" */;
 			buildPhases = (
+				E277496C0417C1BE6A5B2229 /* Check Pods Manifest.lock */,
 				9C5BCE391AAAEFFF008277C7 /* Sources */,
 				9C5BCE3A1AAAEFFF008277C7 /* Frameworks */,
 				9C5BCE3B1AAAEFFF008277C7 /* Resources */,
+				3B494A83C068121F22A91FBD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -278,6 +280,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B494A83C068121F22A91FBD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-braincodeSwiftTests/Pods-braincodeSwiftTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E277496C0417C1BE6A5B2229 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9C5BCE241AAAEFFF008277C7 /* Sources */ = {
@@ -432,6 +467,7 @@
 		};
 		9C5BCE4B1AAAEFFF008277C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CC6CE7DFA5C9493D0BCC11A /* Pods-braincodeSwiftTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
@@ -446,7 +482,7 @@
 				INFOPLIST_FILE = braincodeSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "braincodeSwiftTests/braincodeSwiftTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/braincodeSwift.app/braincodeSwift";
 			};
@@ -454,6 +490,7 @@
 		};
 		9C5BCE4C1AAAEFFF008277C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE633F27CF4E8595D6D3DE58 /* Pods-braincodeSwiftTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
@@ -464,7 +501,7 @@
 				INFOPLIST_FILE = braincodeSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "braincodeSwiftTests/braincodeSwiftTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/braincodeSwift.app/braincodeSwift";
 			};
 			name = Release;
