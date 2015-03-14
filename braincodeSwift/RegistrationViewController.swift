@@ -23,4 +23,25 @@ class RegistrationViewController: UIViewController {
         self.nameTextField.layer.backgroundColor = UIColor.whiteColor().CGColor
         self.lastNameTextField.layer.backgroundColor = UIColor.whiteColor().CGColor
     }
+
+    func validateForm() -> String {
+        var error = String()
+
+        if (self.nameTextField.text.isEmpty || self.lastNameTextField.text.isEmpty) {
+            error = "Wypełnij wszystkie pola"
+        }
+        return error
+    }
+
+    @IBAction func buttonTapped(sender: AnyObject) {
+        var errorMessage = self.validateForm() as String
+
+        if (!errorMessage.isEmpty) {
+            UIAlertView(title: "Info", message: errorMessage, delegate: nil, cancelButtonTitle: "OK").show()
+        } else {
+            UIAlertView(title: "Info", message: "Zarejestrowałeś się poprawnie", delegate: nil, cancelButtonTitle: "OK").show()
+            self.navigationController?.popToRootViewControllerAnimated(true)
+        }
+    }
+
 }
